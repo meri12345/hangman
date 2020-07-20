@@ -7,7 +7,7 @@
       
     </div>
     <div class="col-sm-6">
-      <img :src="getImgUrl(getLives+1)" :alt="picURL">
+      <img :src="getImgUrl(getLives+1)" alt="picURL">
     </div>
     <div class="col-sm-3">
       
