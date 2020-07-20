@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         wordList:['simple','flower','lake','female','book','snake','paint','fish','gate','crew'],
-        lives:7,
+        lives:6,
         index:0,
         letters:[],
         done:false

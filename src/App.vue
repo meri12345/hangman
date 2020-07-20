@@ -7,7 +7,7 @@
       
     </div>
     <div class="col-sm-6">
-      <img src="./assets/1.png" alt="">
+      <img :src="getImgUrl(getLives+1)" :alt="picURL">
     </div>
     <div class="col-sm-3">
       
@@ -54,6 +54,13 @@ export default{
     getDone(){
       return this.$store.getters.getDone
     }
+    
+  },
+  methods:{
+    getImgUrl(pic) {
+    var images = require.context('./assets/', false, /\.png$/)
+    return images('./' + pic + ".png")
+ }
   }
   
 
