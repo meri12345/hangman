@@ -56,7 +56,7 @@ export const store = new Vuex.Store({
         },
         'RESTART':(state)=>{
             state.letters=[],
-            state.lives=7,
+            state.lives=6,
             state.done=false
         }
     },
